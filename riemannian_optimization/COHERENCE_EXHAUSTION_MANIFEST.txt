@@ -39,3 +39,7 @@ Oscillatory scaling configurations remain phase-aligned only
 up to the structural memory exhaustion length of the n=6
 substitution generation depth.
 ============================================================
+
+# Symbolic Dynamics Tracking Integration
+Tribonacci_Word_Length: 927
+Complexity_At_Horizon_p39: 79
