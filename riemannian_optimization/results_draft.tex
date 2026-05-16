@@ -1,0 +1,22 @@
+\section{Results and Structural Falsification}
+
+To evaluate the validity of the asymptotic Discrete Scale Invariance (DSI) hypothesis within the Rauzy-projected Tribonacci framework, we explicitly test the system against the algebraically derived spectral expectation:
+$$\omega = \frac{\theta}{\log \beta} \approx 3.5712$$
+
+\subsection{Falsification of the Monofrequency Ansatz}
+A global regression fit utilizing the rigid single-frequency log-periodic ansatz,
+\begin{equation}
+\Delta_j = A \cos(\omega j + \phi) e^{-\gamma j}
+\end{equation}
+yields a deficient coefficient of determination, $R^2 = 0.1438$. The structural variance of the scaling residuals cannot be accounted for by a singular, continuous log-periodic mode anchored to the substitution matrix eigenvalues. 
+
+Expanding the optimization framework to a $K=4$ multi-mode damped model via spectral initialization yields a marginal improvement ($R^2 = 0.2382$), while the Akaike Information Criterion (AIC) exhibits a characteristic plateau. The optimized frequencies cluster at non-algebraic vectors ($\omega \approx 1.13, 1.24, 1.88, 2.61$), demonstrating that global continuous optimization models fail to reflect the underlying discrete geometry.
+
+\subsection{Intermittent Coherence and Generation Boundary Localization}
+Short-time spectral coherence scanning indicates an intermittent rather than sustained DSI profile, characterized by a mean structural coherence of $0.5476$ and a high coefficient of variation ($CV = 0.6464$). Spatial tracking along the log-scale index axis reveals a sharp localized coherence collapse localized at index $j \approx 21.5$, where the local fit quality plunges precipitously ($\Delta R^2 = -0.2288$).
+
+Mapping the empirical window bounds at this transition target directly to the inflation lengths governed by the dominant Pisot eigenvalue $\beta$ reveals a precise structural alignment:
+\begin{equation}
+s_{\text{mid}} = 38.5 \approx \beta^6 = 38.7166
+\end{equation}
+The observed loss of log-periodic coherence is thus uniquely mapped to the boundary threshold of the $n=6$ substitution generation depth. We conclude that the scaling corrections are governed by finite-depth structural memory configurations rather than an asymptotic continuous scaling flow.
