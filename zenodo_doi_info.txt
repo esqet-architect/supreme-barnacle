@@ -1,0 +1,13 @@
+ESQET Whitepaper Series - Zenodo Deposit
+=========================================
+Deposit ID: 
+Record ID: 
+DOI: 
+Concept DOI: 
+URL: https://zenodo.org/record/
+Date: 2026-05-15 13:24:00 UTC
+
+Cite as:
+Rocha Jr., Marco Antônio. (2026). ESQET: Emergent Spacetime Quantum-Entanglement Theory — Complete Whitepaper Series. Zenodo. 
+
+ORCID: 0009-0004-9757-2853

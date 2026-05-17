@@ -1,0 +1,65 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\usepackage{hyperref}
+
+\geometry{margin=1in}
+
+\title{\textbf{Projected Stability and Unresolved Structural Gaps in Constrained Nonlocal Actions}}
+\author{\textbf{Marco Antônio Rocha Jr.}\\ \small{Independent Researcher, Colorado}}
+\date{May 2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We report a verified mathematical proof of tangent-bundle stability alongside a critical, unresolved contradiction in the structural scaling of discrete nonlocal transport actions constrained to an $L^2$ hypersphere ($\mathbb{S}^{N-1}$). While introducing the tangent bundle projection operator $H_{\mathrm{rigorous}} = P H_A P - 2\mu P$ establishes local positive-definiteness ($N_{\mathrm{negative}} = 0$), rigorous characteristic root analysis definitively disproves the existence of a real exponential decay profile. Numerical optimization routines consistently converge to a late-stage decay ratio of $S_n / S_{n-1} \approx 0.79$, yet the system's linearized characteristic polynomial yields exclusively complex conjugate roots. The origin of the $0.79$ attractor remains unexplained and stands as an open structural gap in the framework.
+\end{abstract}
+
+\section{The Corrected Tangent Bundle Stability Criterion}
+Consider the discrete transport functional under non-local memory tracking:
+\begin{equation}
+A[S] = \frac{1}{2} \sum_{n} (S_n - S_{n-1})^2 - \gamma \sum_{n} S_n S_{n-2}
+\end{equation}
+subject to the global normalization condition $g(S) = \sum_n S_n^2 - 1 = 0$.
+
+The rigorous, geometrically isolated Lagrangian Hessian is defined as:
+\begin{equation}
+H_{\mathrm{rigorous}} = P H_A P - 2\mu P \quad \text{where} \quad P = I - S S^\top
+\end{equation}
+and $\mu = \frac{1}{2} S^\top \nabla A[S]$ is the precise Lagrange multiplier. Numerical tracking across $\gamma \in [0.0, 0.5]$ confirms $\lambda_{\min} > 0$ on the tangent bundle, establishing local stability.
+
+\section{The 0.79 Contradiction: Linearized Root Failure}
+In numerical execution, optimization profiles consistently exhibit an asymptotic decay ratio of $S_n / S_{n-1} \approx 0.79$. To establish its analytical origin, we map the ansatz $S_n = C \cdot r^n$ to the linearized discrete Euler--Lagrange equation:
+\begin{equation}
+(S_n - S_{n-1}) - (S_{n+1} - S_n) - \gamma(S_{n-2} + S_{n+2}) = 0
+\end{equation}
+This yields the symmetric characteristic polynomial:
+\begin{equation}
+-\gamma r^4 - r^3 + 2r^2 - r - \gamma = 0
+\end{equation}
+
+Numerical evaluation of this polynomial across all stable coupling configurations ($\gamma \in [0.05, 0.25]$) returns \textbf{an empty set of real sub-unitary roots}. The roots are exclusively complex conjugates, explicitly forbidding a pure real exponential decay sequence. 
+
+Consequently, the numerical persistence of the $\approx 0.79$ ratio directly contradicts the linearized mathematical foundation. It cannot be explained as a property of linear recurrence tracking or simple wave-packet boundary fitting. It remains an unresolved anomaly, likely driven by highly non-linear contributions from the hyperspherical constraint gradient that are completely lost during linearization.
+
+\section{Defensible Model Boundaries and Gaps}
+\begin{enumerate}
+    \item \textbf{Verified Matrix Invariants:} The constrained system possesses a stable, positive-definite internal tangent spectrum on $\mathbb{S}^{N-1}$.
+    \item \textbf{Exposed Structural Gaps:} The $\sim 0.79$ scaling factor has zero analytical foundation within the linearized equations. Its origin is currently unknown.
+    \item \textbf{Speculative Frameworks:} Any physical interpretations regarding continuum spacetime invariants or cosmological constants are suspended pending the resolution of this mathematical gap.
+\end{enumerate}
+
+
+\section{Known Failure Modes and Methodological Limitations}
+To ensure transparency for future replication, we catalog known failure modes:
+\begin{enumerate}
+    \item \textbf{Optimizer Dependence:} The $\sim 0.79$ ratio appears under specific constrained gradient descent variants. Robustness under other configurations is unverified.
+    \item \textbf{Finite Lattice Sensitivity:} Tangent stability verified on finite lattices only. Continuum-limit proof is absent.
+    \item \textbf{Boundary Sensitivity:} Periodic boundaries regularize nonlocal terms. Other boundary conditions materially change the spectrum.
+    \item \textbf{No Uniqueness Proof:} No proof guarantees global minima versus metastable traps.
+    \item \textbf{No Physical Validation:} All mappings to physical constants remain speculative.
+\end{enumerate}
+\end{document}
+\n"

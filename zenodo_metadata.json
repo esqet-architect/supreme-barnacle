@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "title": "Projected Stability and Unresolved Structural Gaps in Constrained Nonlocal Actions",
+    "upload_type": "software",
+    "description": "A research archive containing numerical scripts, automated stability scans, and LaTeX documentation exploring discrete non-local transport functionals under global L2 normalization constraints. Documents the rigorous proof of tangent-bundle stability alongside an unresolved structural anomaly regarding an emergent 0.79 numerical scaling attractor that directly contradicts linearized characteristic analysis.",
+    "creators": [
+      {
+        "name": "Rocha Jr., Marco Antônio",
+        "affiliation": "Independent Researcher"
+      }
+    ],
+    "keywords": [
+      "Discrete Variational Mechanics",
+      "Constrained Optimization",
+      "Nonlocal Actions",
+      "Tangent Bundle Projection",
+      "Emergent Scaling Anomaly"
+    ],
+    "license": "MIT",
+    "access_right": "open"
+  }
+}

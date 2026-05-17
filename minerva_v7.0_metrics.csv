@@ -1,5 +1,0 @@
-System,Primitive,Irreducible_over_Q,Strict_Pisot,Lambda_PF,Subspace_Dim,Wandering_Gamma,Correlation_D2,Classification
-Tribonacci,Yes,Yes,Yes,1.8392867552141616,2D,0.0,1.7898575602706501,Planar Rauzy Fractal
-Fibonacci,Yes,Yes,Yes,1.618033988749895,1D,0.0,0.9692471908933582,1D Cut-and-Project Strip
-Pisot Binary Substitution,Yes,Yes,Yes,3.732050807568877,1D,1.0027861839192234,0.9766604742846257,1D Cut-and-Project Strip
-ThueMorse,Yes,No,No,2.0,1D,0.0,0.0,Reducible Automatic System

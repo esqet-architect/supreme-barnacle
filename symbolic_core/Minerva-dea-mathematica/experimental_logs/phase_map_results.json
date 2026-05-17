@@ -1,0 +1,176 @@
+{
+    "20": [
+        {
+            "action": 0.0,
+            "ratio": 0.9999999955278641,
+            "min_eigenvalue": -2.507314914505493e-16,
+            "gamma": 0.0,
+            "status": "STABLE"
+        },
+        {
+            "action": -0.23489854638249194,
+            "ratio": 0.8764424954240214,
+            "min_eigenvalue": -0.4697970885138926,
+            "gamma": 0.25,
+            "status": "COLLAPSED"
+        },
+        {
+            "action": -0.47378195908754334,
+            "ratio": 0.8457558830565958,
+            "min_eigenvalue": -0.9475638511714747,
+            "gamma": 0.5,
+            "status": "COLLAPSED"
+        },
+        {
+            "action": -0.7131897494320851,
+            "ratio": 0.8321866800227434,
+            "min_eigenvalue": -1.4263798047862069,
+            "gamma": 0.75,
+            "status": "COLLAPSED"
+        },
+        {
+            "action": -0.9527677092235736,
+            "ratio": 0.8247290045717998,
+            "min_eigenvalue": -1.9055357645790687,
+            "gamma": 1.0,
+            "status": "COLLAPSED"
+        },
+        {
+            "action": -1.1924233953477947,
+            "ratio": 0.8201412913736903,
+            "min_eigenvalue": -2.38484574543878,
+            "gamma": 1.25,
+            "status": "COLLAPSED"
+        },
+        {
+            "action": -1.432121939481306,
+            "ratio": 0.8171240768924518,
+            "min_eigenvalue": -2.864243767376787,
+            "gamma": 1.5,
+            "status": "COLLAPSED"
+        },
+        {
+            "action": -1.9115905340004344,
+            "ratio": 0.8135999545168369,
+            "min_eigenvalue": -3.8231792993915397,
+            "gamma": 2.0,
+            "status": "COLLAPSED"
+        }
+    ],
+    "50": [
+        {
+            "action": 0.0,
+            "ratio": 0.9999999929289324,
+            "min_eigenvalue": -3.4549239079234864e-16,
+            "gamma": 0.0,
+            "status": "STABLE"
+        },
+        {
+            "action": -0.24681368306981138,
+            "ratio": 0.8571092732659636,
+            "min_eigenvalue": -0.4936274661545904,
+            "gamma": 0.25,
+            "status": "COLLAPSED"
+        },
+        {
+            "action": -0.4948758542181026,
+            "ratio": 0.8257466597171614,
+            "min_eigenvalue": -0.989751378411322,
+            "gamma": 0.5,
+            "status": "COLLAPSED"
+        },
+        {
+            "action": -0.7430058926023801,
+            "ratio": 0.8121032988272212,
+            "min_eigenvalue": -1.4860117386143419,
+            "gamma": 0.75,
+            "status": "COLLAPSED"
+        },
+        {
+            "action": -0.9911549139507557,
+            "ratio": 0.8046240819018731,
+            "min_eigenvalue": -1.982309601980231,
+            "gamma": 1.0,
+            "status": "COLLAPSED"
+        },
+        {
+            "action": -1.23931200739437,
+            "ratio": 0.800009254975494,
+            "min_eigenvalue": -2.4786247274771043,
+            "gamma": 1.25,
+            "status": "COLLAPSED"
+        },
+        {
+            "action": -1.4874733453724198,
+            "ratio": 0.7969527978818365,
+            "min_eigenvalue": -2.9749486725267666,
+            "gamma": 1.5,
+            "status": "COLLAPSED"
+        },
+        {
+            "action": -1.7356372302861955,
+            "ratio": 0.7948338628026794,
+            "min_eigenvalue": -3.4712748760052765,
+            "gamma": 1.75,
+            "status": "COLLAPSED"
+        },
+        {
+            "action": -1.9838027893614067,
+            "ratio": 0.7933198295930264,
+            "min_eigenvalue": -3.9676036426892543,
+            "gamma": 2.0,
+            "status": "COLLAPSED"
+        }
+    ],
+    "100": [
+        {
+            "action": 0.0,
+            "ratio": 0.9999999900000001,
+            "min_eigenvalue": 1.552577510999242e-16,
+            "gamma": 0.0,
+            "status": "STABLE"
+        },
+        {
+            "action": -0.24911609952058372,
+            "ratio": 0.8535624440899522,
+            "min_eigenvalue": -0.49823222863460903,
+            "gamma": 0.25,
+            "status": "COLLAPSED"
+        },
+        {
+            "action": -0.4986244542679864,
+            "ratio": 0.8223758586459006,
+            "min_eigenvalue": -0.9972488099065875,
+            "gamma": 0.5,
+            "status": "COLLAPSED"
+        },
+        {
+            "action": -0.7481434628018304,
+            "ratio": 0.8088231572735805,
+            "min_eigenvalue": -1.4962869128150487,
+            "gamma": 0.75,
+            "status": "COLLAPSED"
+        },
+        {
+            "action": -1.4967119523025583,
+            "ratio": 0.7937639727352671,
+            "min_eigenvalue": -2.9934239434944683,
+            "gamma": 1.5,
+            "status": "COLLAPSED"
+        },
+        {
+            "action": -1.7462359449957374,
+            "ratio": 0.7916523267002139,
+            "min_eigenvalue": -3.4924724052859424,
+            "gamma": 1.75,
+            "status": "COLLAPSED"
+        },
+        {
+            "action": -1.9957601742470072,
+            "ratio": 0.7901404652838988,
+            "min_eigenvalue": -3.991520158429874,
+            "gamma": 2.0,
+            "status": "COLLAPSED"
+        }
+    ]
+}
