@@ -1,0 +1,30 @@
+name: Upload Core Release to Zenodo
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  zenodo-upload:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Execute Zenodo Transmission
+        env:
+          ZENODO_TOKEN: ${{ secrets.ZENODO_API }}
+        run: |
+          chmod +x ./upload_to_zenodo.sh
+          ./upload_to_zenodo.sh
