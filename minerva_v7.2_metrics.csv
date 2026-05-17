@@ -1,0 +1,5 @@
+System,Strict_Pisot,Projector_Rank,Geom_Dim,Wandering_Gamma,Correlation_D2,Classification
+Tribonacci,Yes,2D,2D,0.0,1.763555666573831,Planar Rauzy Fractal
+Fibonacci,Yes,1D,1D,0.0,0.9764932433040194,1D Cut-and-Project Strip
+Pisot Binary Substitution,Yes,1D,1D,0.0,0.953781864073884,1D Cut-and-Project Strip
+ThueMorse,No,1D,1D,0.0,0.0,Reducible Automatic System
