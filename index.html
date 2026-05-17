@@ -3,16 +3,217 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supreme Barnacle — Minerva Framework</title>
+    <title>Supreme Barnacle • ESQET Minerva</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=DM+Mono:wght@300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js"></script>
     <style>
-        body { font-family: system-ui; background: #0d0d0f; color: #e8e2d6; padding: 40px; }
-        h1 { color: #c8972a; }
+        :root {
+            --ink: #0d0d0f;
+            --paper: #f8f4eb;
+            --gold: #c8972a;
+            --teal: #1a6b6b;
+            --rust: #8b3a2a;
+        }
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body {
+            background: var(--paper);
+            color: var(--ink);
+            font-family: 'EB Garamond', Georgia, serif;
+            line-height: 1.75;
+            font-size: 18px;
+        }
+        body::before {
+            content: '';
+            position: fixed;
+            inset: 0;
+            background: linear-gradient(var(--ink) 1px, transparent 1px),
+                        linear-gradient(90deg, var(--ink) 1px, transparent 1px);
+            background-size: 60px 60px;
+            opacity: 0.04;
+            pointer-events: none;
+            z-index: -1;
+        }
+
+        nav {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            background: rgba(248,244,235,0.95);
+            backdrop-filter: blur(12px);
+            z-index: 100;
+            padding: 1.2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid rgba(13,13,15,0.1);
+        }
+        .logo { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; letter-spacing: 3px; }
+        .logo span { color: var(--gold); }
+
+        #hero {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            padding: 0 8%;
+            gap: 4rem;
+        }
+        .hero-text h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: clamp(3.5rem, 8vw, 7rem);
+            line-height: 0.9;
+            margin-bottom: 1.5rem;
+        }
+        .hero-text .accent { color: var(--gold); }
+        .hero-text p { font-size: 1.25rem; max-width: 38ch; margin-bottom: 2rem; opacity: 0.85; }
+
+        #rauzy-canvas {
+            width: 100%;
+            max-height: 85vh;
+            border: 1px solid rgba(13,13,15,0.15);
+            background: #fff;
+        }
+
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 2px;
+            background: rgba(13,13,15,0.08);
+            margin: 4rem 0;
+        }
+        .metric {
+            background: var(--paper);
+            padding: 2rem;
+            text-align: center;
+        }
+        .metric-value {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 2.8rem;
+            color: var(--ink);
+        }
+        .metric-label { font-size: 0.75rem; letter-spacing: 1.5px; text-transform: uppercase; opacity: 0.6; }
+
+        section { padding: 6rem 8%; max-width: 1200px; margin: 0 auto; }
+        h2 { font-family: 'Bebas Neue', sans-serif; font-size: 3.2rem; margin-bottom: 2rem; }
+
+        footer {
+            background: var(--ink);
+            color: #e8e2d6;
+            padding: 4rem 8%;
+            text-align: center;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
-    <h1>Supreme Barnacle</h1>
-    <p>Minerva-dea-mathematica • Rauzy Analysis • ESQET Framework</p>
-    <p>GitHub Pages deployment is now active.</p>
-    <p><a href="https://github.com/esqet-architect/supreme-barnacle">Repository</a></p>
+
+<nav>
+    <a href="#" class="logo">SUPREME<span>BARNACLE</span></a>
+    <div>
+        <a href="https://zenodo.org/deposit/20261138" target="_blank" style="margin-right:2rem;color:#c8972a;">Zenodo</a>
+        <a href="https://github.com/esqet-architect/supreme-barnacle" target="_blank">GitHub</a>
+    </div>
+</nav>
+
+<section id="hero">
+    <div class="hero-text">
+        <h1>ESQET<span class="accent">.</span><br>MINERVA</h1>
+        <p>Rauzy Fractals • Pisot Dynamics • Universal Operator Law<br>
+        Scale-invariant entropy and observer geometry.</p>
+        
+        <div style="margin-top:3rem;">
+            <a href="https://zenodo.org/deposit/20261138" target="_blank" style="background:#0d0d0f;color:white;padding:1rem 2rem;text-decoration:none;margin-right:1rem;display:inline-block;">View on Zenodo</a>
+            <a href="#architecture" style="border:1px solid #c8972a;color:#c8972a;padding:1rem 2rem;text-decoration:none;display:inline-block;">Explore Architecture</a>
+        </div>
+    </div>
+    
+    <div>
+        <canvas id="rauzy-canvas" width="800" height="700"></canvas>
+    </div>
+</section>
+
+<div class="metrics">
+    <div class="metric">
+        <div class="metric-value">φ</div>
+        <div class="metric-label">Golden Ratio Invariant</div>
+    </div>
+    <div class="metric">
+        <div class="metric-value">1.839</div>
+        <div class="metric-label">Tribonacci β</div>
+    </div>
+    <div class="metric">
+        <div class="metric-value">≈0.5</div>
+        <div class="metric-label">Hölder Exponent</div>
+    </div>
+    <div class="metric">
+        <div class="metric-value">UOL</div>
+        <div class="metric-label">Proven Invariance</div>
+    </div>
+</div>
+
+<section id="architecture">
+    <h2>The Framework</h2>
+    <p>Supreme Barnacle is the canonical home for the Minerva computational engine — Rauzy fractal validation, Pisot spectral analysis, and the exploration of scale-invariant structures in symbolic dynamics.</p>
+    
+    <p style="margin-top:2rem;"><strong>Unity Protocol Active:</strong> This work is dedicated to the advancement of knowledge and may never be used for weaponization or coercive control.</p>
+</section>
+
+<footer>
+    <p>Marco Antônio Rocha Jr. © 2026 • ESQET Research</p>
+    <p>
+        <a href="https://zenodo.org/deposit/20261138" target="_blank" style="color:#c8972a;">Zenodo 20261138</a> • 
+        <a href="https://github.com/esqet-architect/supreme-barnacle" target="_blank" style="color:#c8972a;">GitHub</a>
+    </p>
+</footer>
+
+<script>
+// Rauzy Fractal Live Canvas
+const canvas = document.getElementById('rauzy-canvas');
+const ctx = canvas.getContext('2d');
+
+function resize() {
+    canvas.width = canvas.offsetWidth * devicePixelRatio;
+    canvas.height = canvas.offsetHeight * devicePixelRatio;
+    ctx.scale(devicePixelRatio, devicePixelRatio);
+}
+resize();
+window.addEventListener('resize', resize);
+
+const subs = {A:'AB', B:'AC', C:'A'};
+function generateWord(steps = 16) {
+    let w = 'A';
+    for (let i = 0; i < steps; i++) {
+        let next = '';
+        for (let ch of w) next += subs[ch] || ch;
+        w = next;
+    }
+    return w;
+}
+
+function drawRauzy() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    const word = generateWord(15);
+    
+    let x = canvas.offsetWidth / 2;
+    let y = canvas.offsetHeight / 2;
+    const step = 4.5;
+    
+    const colors = {A: '#c8972a', B: '#1a6b6b', C: '#8b3a2a'};
+    
+    for (let i = 0; i < word.length; i++) {
+        const ch = word[i];
+        ctx.fillStyle = colors[ch];
+        ctx.globalAlpha = 0.6 + Math.sin(i * 0.1) * 0.3;
+        ctx.fillRect(x, y, 2.5, 2.5);
+        
+        x += Math.cos(i * 0.13) * step;
+        y += Math.sin(i * 0.17) * step * 0.6;
+    }
+    ctx.globalAlpha = 1;
+}
+
+setInterval(drawRauzy, 120);
+drawRauzy();
+</script>
 </body>
 </html>
