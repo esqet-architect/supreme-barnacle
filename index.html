@@ -7,7 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&family=DM+Mono:wght@300;400;500&family=Bebas+Neue&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-chtml.min.js"></script>
     <style>
-        :root {
+         :root {
             --bg: #f8f4eb;
             --text: #0d0d0f;
             --gold: #c8972a;
@@ -46,18 +46,25 @@
             cursor: pointer;
             font-family: 'DM Mono', monospace;
         }
-        #rauzy-canvas { border: 1px solid rgba(200,151,42,0.3); }
-        /* ... rest of your previous styles ... */
+        #rauzy-canvas {
+            border: 1px solid var(--gold);
+            background: #111;
+            display: block;
+            margin: 0 auto;
+        }
     </style>
 </head>
-<body data-theme="light">
+<body data-theme="dark">
 
 <nav>
-    <div class="logo">SUPREME <span style="color:var(--gold)">BARNACLE</span></div>
-    <button class="toggle" onclick="toggleTheme()">🌗 Dark Mode</button>
+    <div style="font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem;">SUPREME <span style="color:var(--gold)">BARNACLE</span></div>
+    <button class="toggle" onclick="toggleTheme()">🌗 Toggle Theme</button>
 </nav>
 
-<!-- Your existing hero, metrics, sections... -->
+<section style="padding-top:140px; text-align:center;">
+    <h1 style="font-family: 'Bebas Neue', sans-serif; font-size: 4rem; letter-spacing: 2px;">ESQET • MINERVA</h1>
+    <canvas id="rauzy-canvas" width="900" height="600"></canvas>
+</section>
 
 <script>
 function toggleTheme() {
@@ -68,10 +75,36 @@ function toggleTheme() {
     localStorage.setItem('theme', next);
 }
 
-// Load saved preference
-if (localStorage.getItem('theme') === 'dark') {
-    document.body.setAttribute('data-theme', 'dark');
+if (localStorage.getItem('theme') === 'light') {
+    document.body.setAttribute('data-theme', 'light');
 }
+
+// Live Interactive Rauzy Geometric Canvas Animation
+const c = document.getElementById('rauzy-canvas');
+const ctx = c.getContext('2d');
+let t = 0;
+
+function draw() {
+    ctx.fillStyle = 'rgba(13,13,15,0.15)';
+    ctx.fillRect(0, 0, c.width, c.height);
+
+    const word = "ABACABA";
+    let x = c.width / 2;
+    let y = c.height / 2;
+
+    for (let i = 0; i < 800; i++) {
+        const ch = word[i % word.length];
+        ctx.fillStyle = ch === 'A' ? '#c8972a' : ch === 'B' ? '#1a6b6b' : '#8b3a2a';
+        ctx.globalAlpha = 0.6;
+        ctx.fillRect(x, y, 3, 3);
+
+        x += Math.cos(i * 0.13 + t) * 4.2;
+        y += Math.sin(i * 0.17 + t) * 3.8;
+    }
+    t += 0.008;
+    requestAnimationFrame(draw);
+}
+draw();
 </script>
 </body>
 </html>
