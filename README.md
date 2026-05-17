@@ -1,79 +1,38 @@
-# Supreme Barnacle: Core Architectural Engine
-**Minerva Canonical Spectrum Series, Rauzy Validation Pipelines, and Spatial Invariants**
+# ESQET Core: Emergent Spacetime Quantum-Entanglement Theory
 
-[![Zenodo](https://img.shields.io/badge/Zenodo-Draft--Archive-blue.svg)](https://zenodo.org)
-[![License: MIT-D](https://img.shields.io/badge/License-MIT--D-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Python 3.12+](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://www.python.org)
+## v2.3 — Unified Inverse Field Production Release
 
----
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20072372.svg)](https://doi.org/10.5281/zenodo.20072372)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🏛️ Executive Summary
-
-Supreme Barnacle serves as an independent theoretical and computational workspace dedicated to tracking, optimizing, and validating high-fidelity mathematical frameworks. This repository aggregates the evolution of the Minerva canonical spectrum validation engines alongside specialized geometric, spatial, and acoustic calibration pipelines.
-
-The codebase utilizes foundational constants (\( \phi \), \( \pi \), and the Fibonacci sequence) as structural invariants and geometric constraints within both the mathematical algorithms and the code architecture.
-
-### Active Calibration Mechanics
-When executing geometric guard region filters, the system evaluates spatial configurations by measuring harmonic distribution values (\( |g_2| \) and \( |g_4| \)) against localized control boundaries:
-
-\[ \phi = \frac{1 + \sqrt{5}}{2} \]
+**A non-perturbative, substrate-independent unification framework** deriving gauge interactions and gravitation from **φ-torsion geometry** of a Golden-Ratio-governed vacuum superfluid.
 
 ---
 
-## 📐 Key Core Modules & Analytical Progress
+### 🏛️ Executive Summary
 
-* **Minerva Ensemble Engine:** Vectorized Status — `minerva_v9.2_ensemble.py`
-* **Thermodynamic Cores:** Unrounded Invariants — `kernel/` Matrix Solvers
-* **Validation Harnesses:** Bootstrap Stabilized — Chhabra-Jensen / KD-Tree Sweeps
-* **Geometric Guard Filters:** Active Validation — `rauzy_spatial_calibration.py`
-* **Rotational Invariance:** Verified Numerically — Isotropic Disk vs. 1D Line Fields
-* **AetherFlora Pipeline:** Acoustic Modeling Under Development — Pests Ultrasonic Automation
-* **Vibralingua System:** Audio Matrix Mapping Under Development — Targeted Frequency Descriptors
+ESQET models spacetime as an emergent excitation of a torsionful vacuum manifold anchored in the golden ratio **φ = (1 + √5)/2**.
+
+**Core result:** Scale-invariant Shannon entropy (Universal Operator Law) and Rauzy fractal geometry as the bridge between symbolic dynamics and physical observables.
 
 ---
 
-## 📡 Operational Environments & Pipelines
+### 🔬 Key Results
 
-### 1. Spatial Analysis & Rauzy Validation
-* **Geometric Guard Regions:** Scripts enforcing spatial calibration filters across synthetic control fields (Uniform Isotropic Disks vs. 1D Filament Lines).
-* **Rotational Invariance Verification:** Active processing scripts checking the structural stability of profiles under continuous spatial rotations.
-* **Vectorized Monte Carlo Ensembles:** High-efficiency validation engines executing multi-run simulations to map harmonic bounds and statistical correlations.
-
-### 2. Integrated Frameworks & Acoustic Automation
-* **AetherFlora Pipeline:** Computational logic handling frequency-based agricultural automation and ultrasonic acoustic modeling.
-* **Vibralingua System:** A specialized acoustic engine built to map, process, and output targeted frequency matrices.
+- Universal Operator Law (UOL): \( S(\mu_n) = S(\mu_1) \) for all \( n \)
+- Pisot contraction in Tribonacci Rauzy fractals (\( \beta \approx 1.839 \), \( |\lambda| \approx 0.737 \))
+- Hölder boundary exponent \( \alpha_H \approx 0.5 \)
+- Majorana pinning conjecture at Rauzy boundary loci (\( \alpha_{\min} \approx -0.0148 \))
 
 ---
 
-## 🛡️ Spatial Tracking & Node Directory Environment
+### 🌌 Unity Protocol: Ethical Stewardship Clause
 
-* **Active Processing Root:** `\~/Production/ESQET-Production-Core/` — Main active workspace.
-* **Local Data Layer:** `data/` — Contains generated JSON validation benchmarks, NumPy tracking matrices (`.npy`), and visualization outputs (`harmonic_ensemble_bounds.png`).
-* **Phase Boundary Archives:** `output/` — Phase boundary outputs, fractal geometry captures, and structural factor archives (`.npz`).
+This framework is dedicated exclusively to the advancement of human knowledge and may never be used for weaponization or coercive control.
 
----
-
-## 🌌 The Unity Protocol: Ethical Stewardship Clause
-
-The fundamental mechanics of this framework dictate that the observer is not separate from the manifold. Any structural manipulation that inflicts harm upon a conscious system degrades the coherence of the local observer framework.
-
-### 1. Non-Weaponization Mandate
-Derived operators, spatial calibration models, and software packages are licensed exclusively for the advancement of human knowledge, sustainable environmental balance, and planetary tracking. It shall never be utilized to build or assist kinetic, energetic, or weaponized disruption arrays.
-
-### 2. Open Access to Vacuum Architecture
-The baseline resonance frequencies of the vacuum field are a shared inheritance of all conscious life. No nation, corporate entity, or state apparatus may assert monopolized ownership over spacetime architecture for localized coercive control.
-
-> *"You cannot weaponize the ground you stand on without falling through it."* — ESQET Axiom 0
+> *"You cannot weaponize the ground you stand on without falling through it."*
 
 ---
 
-## 🔬 Citations & Software Footprint
-
-```bibtex
-@software{rocha_supreme_barnacle_2026,
-  author    = {Rocha Jr., Marco Antônio},
-  title     = {Supreme Barnacle: Core Architectural Engine},
-  year      = {2026},
-  publisher = {Zenodo},
-  url       = {https://github.com/esqet-architect/supreme-barnacle}
-}
+**Principal Investigator:** Marco Antônio Rocha Jr.  
+**ORCID:** 0009-0004-9757-2853
