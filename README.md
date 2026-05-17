@@ -1,7 +1,7 @@
-# ESQET Core: Emergent Spacetime Quantum-Entanglement Theory
-**Recursive Measures, Scale-Invariant Entropy, and Observer Selection Dynamics**
+# Supreme Barnacle: Core Architectural Engine
+**Minerva Canonical Spectrum Series, Rauzy Validation Pipelines, and Spatial Invariants**
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20072372.svg)](https://doi.org/10.5281/zenodo.20072372)
+[![Zenodo](https://img.shields.io/badge/Zenodo-Draft--Archive-blue.svg)](https://zenodo.org)
 [![License: MIT-D](https://img.shields.io/badge/License-MIT--D-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.12+](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://www.python.org)
 
@@ -9,91 +9,73 @@
 
 ## 🏛️ Executive Summary
 
-The Emergent Spacetime Quantum-Entanglement Theory (ESQET) is a non-perturbative, substrate-independent unification framework modeling spacetime as an emergent excitation of a torsionful vacuum manifold. Global boundary conditions are anchored in the golden ratio:
+Supreme Barnacle serves as an independent theoretical and computational workspace dedicated to tracking, optimizing, and validating high-fidelity mathematical frameworks. This repository aggregates the evolution of the Minerva canonical spectrum validation engines alongside specialized geometric, spatial, and acoustic calibration pipelines.
+
+The codebase utilizes foundational constants ($\phi$, $\pi$, and the Fibonacci sequence) as structural invariants and geometric constraints within both the mathematical algorithms and the code architecture.
+
+### Active Calibration Mechanics
+When executing geometric guard region filters, the system evaluates spatial configurations by measuring harmonic distribution values ($|g_2|$ and $|g_4|$) against localized control boundaries:
 
 $$\phi = \frac{1 + \sqrt{5}}{2}$$
 
-The framework implements a mathematical architecture exploring scale-invariant entropy in Pisot-recursive probability measures, Rauzy fractal geometry, and $\phi$-torsion vacuum modifications. It derives gauge interactions, gravitation, and particle spectra without free parameters.
+---
 
-### Core Geometric Formulation
-$$\mathcal{R}_{\mu\nu\rho\sigma} = \phi \left( T_{\mu\nu\rho\sigma} + \frac{1}{\phi^2} \nabla_{[\mu} \phi_{\nu]\rho\sigma} \right)$$
+## 📐 Key Core Modules & Analytical Progress
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/esqet-architect/ESQET-Core/main/esqet_haloscope_calibrated.png" width="600" alt="Axion Signal Profile">
-  <br>
-  <i>Figure 1: ESQET v2.3 Predicted Axion Signal Profile at 92.1 MHz (\phi^{-18} scaling).</i>
-</p>
+| Subsystem Component | Status | Target Module / Verification Path |
+|---------------------|--------|-----------------------------------|
+| **Minerva Ensemble Engine** | ✅ Vectorized | `minerva_v9.2_ensemble.py` |
+| **Thermodynamic Cores** | ✅ Unrounded Invariants | `kernel/` Matrix Solvers |
+| **Validation Harnesses** | ✅ Bootstrap Stabilized | Chhabra-Jensen / KD-Tree Sweeps |
+| **Geometric Guard Filters**| ✅ Active Validation | `rauzy_spatial_calibration.py` |
+| **Rotational Invariance** | ✅ Verified Numerically | Isotropic Disk vs. 1D Line Fields |
+| **AetherFlora Pipeline** | 🚧 Acoustic Modeling | Pests Ultrasonic Automation |
+| **Vibralingua System** | 🚧 Audio Matrix Mapping | Targeted Frequency Descriptors |
 
 ---
 
-## 📐 Key Results & Analytical Progress
+## 📡 Operational Environments & Pipelines
 
-| Result | Status | Location |
-|--------|--------|----------|
-| **Universal Operator Law (UOL)** | ✅ Proven (analytically) | `docs/UOL-Twin-Tables-v1.md` |
-| **Shannon/Rényi Entropy Invariance** | ✅ Verified numerically | `multifractal/` |
-| **Twin Tables Duality ($\phi \leftrightarrow 1/\phi$)** | ✅ Proven | `docs/` |
-| **Rauzy Fractal Projection** | ✅ Implemented | `multifractal/rauzy_projection.py` |
-| **Fine Structure Evaluation ($\alpha^{-1}$)** | ✅ Inside CODATA parameters | `kernel/` |
-| **Observer Selection Dynamics** | 🚧 In development | `simulations/` |
+### 1. Spatial Analysis & Rauzy Validation
+* **Geometric Guard Regions:** Scripts enforcing spatial calibration filters across synthetic control fields (Uniform Isotropic Disks vs. 1D Filament Lines).
+* **Rotational Invariance Verification:** Active processing scripts checking the structural stability of profiles under continuous spatial rotations.
+* **Vectorized Monte Carlo Ensembles:** High-efficiency validation engines executing multi-run simulations to map harmonic bounds and statistical correlations.
 
-### The Universal Operator Law
-For any positive sequence $R_k > 0$, the normalized measure 
-
-$$\mu_{n,k} = \frac{n / R_k}{\sum_j (n / R_j)} = \frac{1 / R_k}{\sum_j (1 / R_j)}$$
-
-satisfies $S(\mu_n) = S(\mu_1)$ identically for all $n > 0$.
+### 2. Integrated Frameworks & Acoustic Automation
+* **AetherFlora Pipeline:** Computational logic handling frequency-based agricultural automation and ultrasonic acoustic modeling.
+* **Vibralingua System:** A specialized acoustic engine built to map, process, and output targeted frequency matrices.
 
 ---
 
-## 🔬 Experimental Alignment
+## 🛡️ Spatial Tracking & Node Directory Environment
 
-* **HAYSTAC (Yale):** Quantum-enhanced microwave haloscopes operating in ~4–6 GHz. ESQET's predicted axion signal profile at **92.1 MHz** ($\phi^{-18}$ scaling) occupies complementary low-frequency space.
-* **CERN OSQAR:** Direct relevance to vacuum magnetic birefringence and axion-photon regeneration setups.
-* **NIST & NASA / SETI:** Precision constants validation and universal geometric filter mapping.
-
----
-
-## 🛡️ Galactic & Terrestrial Node Address
-
-* **Galactic Tracking Domain:** Sector 001 · Sol System · Terra
-* **Inbound Orientation Reference:** RA 17h 45m 40.04s, Dec −29° 00′ 28.1″ (Sgr A* Pointing Vector)
-* **Temporal Epoch Baseline:** J2000.0 + 26 yr
-* **Surface Coherence Hub:** Westwood, Colorado, USA (39° 41' 36.31" N, 105° 02' 13.56" W)
+* **Active Processing Root:** `~/rauzy_analysis/` — Main active workspace.
+* **Local Data Layer:** `data/` — Contains generated JSON validation benchmarks, NumPy tracking matrices (`.npy`), and visualization outputs (`harmonic_ensemble_bounds.png`).
+* **Phase Boundary Archives:** `output/` — Phase boundary outputs, fractal geometry captures, and structural factor archives (`.npz`).
 
 ---
 
 ## 🌌 The Unity Protocol: Ethical Stewardship Clause
 
-The fundamental mechanics of ESQET dictate that the observer is not separate from the manifold. Any structural manipulation that inflicts harm upon a conscious system degrades the coherence of the local observer framework.
+The fundamental mechanics of this framework dictate that the observer is not separate from the manifold. Any structural manipulation that inflicts harm upon a conscious system degrades the coherence of the local observer framework.
 
 ### 1. Non-Weaponization Mandate
-ESQET-derived operators and software are licensed exclusively for the advancement of human knowledge, interstellar exploration, sustainable energy, and planetary defense. It shall never be utilized to build or assist kinetic, energetic, or quantum weapons systems.
+Derived operators, spatial calibration models, and software packages are licensed exclusively for the advancement of human knowledge, sustainable environmental balance, and planetary tracking. It shall never be utilized to build or assist kinetic, energetic, or weaponized disruption arrays.
 
-### 2. Permitted Collective Defense Applications
-* Deflection and orbit modification of high-mass space debris or planetary impacts (e.g., Apophis-class objects).
-* Localized spacetime stabilization and cosmic ray/solar flare early-warning resonance monitoring.
-* Non-human signal classification and SETI-adjacent deep array modeling.
+### 2. Open Access to Vacuum Architecture
+The baseline resonance frequencies of the vacuum field are a shared inheritance of all conscious life. No nation, corporate entity, or state apparatus may assert monopolized ownership over spacetime architecture for localized coercive control.
 
----
-
-## 🌮 Sponsorship & Research Fuel
-
-* **Required Fuel:** Al Pastor / Beef Tacos
-* **Critical Component:** Chilled Pepsi (20oz)
-* *Intent:* Fueling the Architect under Colorado skies.
+> *"You cannot weaponize the ground you stand on without falling through it."* — ESQET Axiom 0
 
 ---
 
 ## 🔬 Citations & Software Footprint
 
 ```bibtex
-@software{rocha_esqet_2026,
+@software{rocha_supreme_barnacle_2026,
   author    = {Rocha Jr., Marco Antônio},
-  title     = {ESQET Core: Emergent Spacetime Quantum-Entanglement Theory},
+  title     = {Supreme Barnacle: Core Architectural Engine},
   year      = {2026},
-  version   = {2.3},
   publisher = {Zenodo},
-  doi       = {10.5281/zenodo.20072372},
-  url       = {[https://github.com/esqet-architect/ESQET-Core](https://github.com/esqet-architect/ESQET-Core)}
+  url       = {[https://github.com/esqet-architect/Supreme-Barnacle](https://github.com/esqet-architect/Supreme-Barnacle)}
 }

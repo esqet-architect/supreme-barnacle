@@ -3,25 +3,18 @@
 # Navigate to workspace
 cd ~/rauzy_analysis || exit 1
 
-# Verify we have the remote origin linked correctly
-git remote set-url origin https://github.com/esqet-architect/supreme-barnacle.git
+# Commit any loose modifications to the README if not already finalized
+git add README.md 2>/dev/null
+git commit -m "docs: finalize Supreme Barnacle architectural engine specs" 2>/dev/null
 
-# Fetch the remote changes to see what's causing the conflict
-echo "Fetching remote repository history..."
+# Fetch the current remote state safely
+echo "Fetching remote repository status..."
 git fetch origin main
 
-# Rebase your local commit on top of the remote changes to align histories
+# Rebase local milestones on top of the remote updates to reconcile history cleanly
 echo "Rebasing local commits onto origin/main..."
 git rebase origin/main
 
-# If the remote was just an empty placeholder repo with a README, 
-# and a standard rebase encounters an issue, we force-allow independent histories:
-if [ $? -ne 0 ]; then
-    echo "Standard rebase failed, forcing integration of unrelated histories..."
-    git rebase --abort
-    git pull origin main --allow-unrelated-histories --no-edit
-fi
-
-# Push the synchronized branch back to GitHub
-echo "Pushing architecture code to GitHub..."
+# Push the unified tracking branch back to GitHub
+echo "Pushing updated architecture to GitHub..."
 git push -u origin main
