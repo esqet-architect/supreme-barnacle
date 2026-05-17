@@ -2,3 +2,5 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 experimental_logs/phase_map_results.json
+minerva-v1.0.2-validated.tar.gz
+pisot_scaling_report.png
