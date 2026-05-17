@@ -1,14 +1,19 @@
-name: Deploy to GitHub Pages
+name: Deploy Framework Site to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
   contents: read
   pages: write
   id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
   deploy:
@@ -17,17 +22,17 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Pages
+      - name: Setup Pages Infrastructure
         uses: actions/configure-pages@v5
 
-      - name: Upload artifact
+      - name: Upload Static Web Artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: '.'   # Deploy from root (where index.html is)
+          path: '.'
 
-      - name: Deploy to GitHub Pages
+      - name: Deploy Framework Site to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'README_WHITEPAPER_SERIES.md'
+      - 'publications/scope_limits.tex'
+      - 'upload_to_zenodo.sh'
 
 jobs:
   zenodo-upload:
@@ -12,7 +16,7 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Set up Python 3.12
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
